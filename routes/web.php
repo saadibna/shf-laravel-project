@@ -16,7 +16,18 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-// Route::get('/','Homecontroller@master')->name('master');
-Route::get('/','Homecontroller@index')->name('index');
-Route::get('/about','Homecontroller@about')->name('about');
-Route::get('/contact','Homecontroller@contact')->name('contact');
+// Route::get('/','myController@master')->name('master');
+Route::get('/index','myController@index')->name('index');
+Route::get('/about','myController@about')->name('about');
+Route::get('/service','myController@service')->name('service');
+Route::get('/caseStudy','myController@case')->name('case');
+Route::get('/blog','myController@blog')->name('blog');
+Route::get('/contact','myController@contact')->name('contact');
+Route::get('/appointment','myController@appointment')->name('appointment');
+
+Auth::routes();
+
+Route::get('/home', 'Homecontroller@index')->name('home');
+
+Route::get('/admin','AdminController@home');
+Route::get('/general','AdminController@general');
