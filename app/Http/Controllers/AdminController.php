@@ -10,8 +10,39 @@ class AdminController extends Controller
     {
         return view('admin.index');
     }
+
+
+    public function dashboard()
+    {
+        return view('admin.dashboard');
+    }
+
+    public function blog()
+    {
+        return view('admin.blog');
+    }
+
+    public function service()
+    {
+        return view('admin.service');
+    }
+
+    public function lawyer()
+    {
+        return view('admin.lawyer');
+    }
+
+    public function category()
+    {
+        return view('admin.category');
+    }
+    public function case()
+    {
+        return view('admin.case');
+
     public function general()
     {
         return view('admin.general');
+
     }
 }
