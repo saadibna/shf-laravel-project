@@ -19,7 +19,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="userName">Category Name</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Enter Blog Title">
+                    <input type="text" class="form-control" id="userName" placeholder="Enter Category Name">
                   </div>
 
                   <div>

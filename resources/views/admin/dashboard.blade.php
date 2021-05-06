@@ -30,7 +30,11 @@
               <div class="inner">
                 <h3>150</h3>
 
+
                 <p>Happpy Clints</p>
+
+                <p>Happy Clients</p>
+
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
@@ -46,6 +50,9 @@
                 <h3>53<sup style="font-size: 20px">%</sup></h3>
 
                 <p>Years Of Experience</p>
+
+                <p>Years of Experience</p>
+
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
@@ -60,7 +67,11 @@
               <div class="inner">
                 <h3>44</h3>
 
+
                 <p>Succesful Cases</p>
+
+                <p>successful Cases</p>
+
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
