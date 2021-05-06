@@ -55,13 +55,17 @@
 
                   <div class="form-group">
                     <label for="clientType">Client Type</label>
-                    <input type="text" class="form-control" id="clientType" placeholder="Enter Type of Client">
+                    <select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">Employer</option>
+                    <option>Business</option>
+                    <option>People</option>
+                    <option>Sponsor</option>
+                    <option>Attorney</option>
+                    
+                  </select>                  
                   </div>
                 </div>
-
                 
-                <!-- /.card-body -->
-
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

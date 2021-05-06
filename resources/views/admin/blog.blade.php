@@ -18,7 +18,7 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="userName">User Name</label>
+                    <label for="userName">Blog Title</label>
                     <input type="text" class="form-control" id="userName" placeholder="Enter Blog Title">
                   </div>
 

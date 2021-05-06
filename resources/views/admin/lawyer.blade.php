@@ -18,8 +18,8 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="lawyerName">Name</label>
-                    <input type="text" class="form-control" id="lawyerName" placeholder="Enter Blog Title">
+                    <label for="lawyerName">Lawyer Name</label>
+                    <input type="text" class="form-control" id="lawyerName" placeholder="Enter Lawyer Name">
                   </div>
 
                   <div class="form-group">

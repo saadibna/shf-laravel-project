@@ -19,7 +19,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="service">Service Title</label>
-                    <input type="text" class="form-control" id="service" placeholder="Enter Blog Title">
+                    <input type="text" class="form-control" id="service" placeholder="Enter Service Title">
                   </div>
 
                   <div>
