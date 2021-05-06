@@ -18,6 +18,28 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
+
+                    <label for="userName"> Name</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Enter name">
+                  </div>
+                  <div class="form-group">
+                    <label for="userName">Email</label>
+                    <input type="Email" class="form-control" id="userEmail" placeholder="Enter Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="userName">Phone</label>
+                    <input type="phone" class="form-control" id="userPhone" placeholder="Enter number">
+                  </div>
+                  <div class="form-group">
+                    <label for="userName">Date</label>
+                    <input type="Date" class="form-control" id="userDate" placeholder="Enter Date">
+                  </div>
+                  <div class="form-group">
+                    <label for="userName">Time</label>
+                    <input type="Time" class="form-control" id="userName" placeholder="Enter name">
+                  </div>
+
+
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter Name">
                   </div>
@@ -43,6 +65,7 @@
                   </div>
 
 
+
                   <div>
                       <!-- textarea -->
                       <div class="form-group">
@@ -50,6 +73,10 @@
                         <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
+
+                 
+                </div>
+                <!-- /.card-body -->
 
                   
 
