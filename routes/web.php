@@ -36,3 +36,17 @@ Route::get('/admin/add-service','AdminController@service')->name('add-service');
 Route::get('/admin/add-lawyer','AdminController@lawyer')->name('add-lawyer');
 Route::get('/admin/add-category','AdminController@category')->name('add-category');
 Route::get('/admin/add-case-study','AdminController@case')->name('add-case-study');
+Route::get('/admin/appointment','AdminController@appoint')->name('appoint');
+Route::get('/admin/add-testimonial','AdminController@test')->name('test');
+Route::get('/admin/blogtable','AdminController@table')->name('showtable');
+Route::get('/admin/testimonialtable','AdminController@table1')->name('showtable1');
+Route::get('/admin/servicetable','AdminController@table2')->name('showtable2');
+Route::get('/admin/lawyertable','AdminController@table3')->name('showtable3');
+Route::get('/admin/categorytable','AdminController@table4')->name('showtable4');
+
+
+
+
+
+
+

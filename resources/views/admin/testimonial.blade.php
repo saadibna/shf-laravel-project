@@ -18,27 +18,23 @@
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="caseName">Case Name</label>
-                    <input type="text" class="form-control" id="caseName" placeholder="Enter Case Name">
+                    <label for="caseName">Clint Name</label>
+                    <input type="text" class="form-control" id="caseName" placeholder="Enter clint Name">
                   </div>
 
                   <div class="form-group">
-                    <label for="lawyerName">Lawyer Name</label>
-                    <input type="text" class="form-control" id="lawyerName" placeholder="Enter Lawyer Name">
+                    <label for="lawyerName">Clint Designation</label>
+                    <input type="text" class="form-control" id="lawyerName" placeholder="clint designation">
                   </div>
 
                   <div>
                       <!-- textarea -->
                       <div class="form-group">
-                        <label>Description</label>
+                        <label>Clint Comment</label>
                         <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
 
-                  <div class="form-group">
-                    <label for="date">Date</label>
-                    <input type="date" class="form-control" id="date" placeholder="Enter Date">
-                  </div>
 
                   <div class="form-group">
                     <label for="exampleInputFile">Upload Image</label>
@@ -52,18 +48,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="form-group">
-                  <label>Clint type</label>
-                  <select class="form-control select2" style="width: 100%;">
-                    <option selected="selected">govt</option>
-                    <option>Business</option>
-                    <option>law firm</option>
-                    <option>industry</option>
-                    <option>attorney</option>
-                    <option>Employee</option>
-                    <option>land worker</option>
-                  </select>
-                </div>
+               
 
                   
 
