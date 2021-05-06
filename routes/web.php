@@ -55,9 +55,12 @@ Route::get('/admin/categorytable','AdminController@table4')->name('showtable4');
 Route::get('/admin/appointment','AdminController@appoint')->name('appoint');
 Route::get('/admin/add-testimonials','AdminController@testimonial')->name('add-testimonial');
 Route::get('/admin/case-study-table','AdminController@tableCaseStudy')->name('table-case');
+Route::get('/admin/appointment-table','AdminController@tableAppointment')->name('table-appointment');
+
 
 
 Route::get('/general','AdminController@general');
+
 
 
 

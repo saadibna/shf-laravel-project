@@ -399,7 +399,11 @@
                 </a>
               </li>
               <li class="nav-item">
+
+                <a href="{{route('table-appointment')}}" class="nav-link">
+
                 <a href="{{route('showtable3')}}" class="nav-link">
+                
                   <i class="far fa-circle nav-icon"></i>
 
                   <p>Lawyer</p>
@@ -407,6 +411,9 @@
                   <p>Appointment</p>
                 </a>
               </li>
+
+             
+
               <li class="nav-item">
                 <a href="{{route('showtable4')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
@@ -425,6 +432,7 @@
                   <p>Appointment</p>
                 </a>
               </li>
+
             </ul>
           </li>
           
