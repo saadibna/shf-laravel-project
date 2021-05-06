@@ -11,6 +11,7 @@ class AdminController extends Controller
         return view('admin.index');
     }
 
+
     public function dashboard()
     {
         return view('admin.dashboard');
@@ -38,6 +39,11 @@ class AdminController extends Controller
     public function case()
     {
         return view('admin.case');
+
+    public function general()
+    {
+        return view('admin.general');
+
     }
 
     public function appoint()
