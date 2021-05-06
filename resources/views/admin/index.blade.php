@@ -23,7 +23,10 @@
   <link rel="stylesheet" href="{{asset('dashboard')}}/assets/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('dashboard')}}/assets/css/adminlte.min.css">
+
+
   <!-- table css link -->
+
   <link rel="stylesheet" href="{{asset('dashboard')}}/assets/css/table.css">
 
   <!-- overlayScrollbars -->
@@ -32,6 +35,16 @@
   <link rel="stylesheet" href="{{asset('dashboard')}}/assets/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="{{asset('dashboard')}}/assets/summernote/summernote-bs4.min.css">
+
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <!-- admin table link -->
 
@@ -43,6 +56,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- /admin table link-->
+
 
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -289,7 +303,11 @@
                 </a>
               </li>
               <li class="nav-item">
+
+                <a href="{{route('test')}}" class="nav-link">
+
                 <a href="{{route('add-testimonial')}}" class="nav-link">
+
                   <i class="far fa-circle nav-icon"></i>
                   <p>Add Testimonials</p>
                 </a>
@@ -345,7 +363,7 @@
           </li>
 
 
-=======
+
 
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -357,21 +375,54 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="{{route('table-case')}}" class="nav-link">
+
+                <a href="{{route('showtable')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Case Study</p>
+                  <p>Blog</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/data.html" class="nav-link">
+                <a href="{{route('showtable1')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
+                  <p>Testimonial</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('showtable2')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Service</p>
+
+                <a href="{{route('table-case')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Case Study</p>
+
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('showtable3')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+
+                  <p>Lawyer</p>
+
                   <p>Appointment</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/tables/jsgrid.html" class="nav-link">
+                <a href="{{route('showtable4')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
+                  <p>Category</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Case study</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/tables/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Appointment</p>
                 </a>
               </li>
             </ul>
@@ -754,7 +805,10 @@
 <script src="{{asset('dashboard')}}/assets/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dashboard')}}/assets/js/demo.js"></script>
+
+
 <!-- table js -->
+
 <script src="{{asset('dashboard')}}/assets/js/table.js"></script>
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->

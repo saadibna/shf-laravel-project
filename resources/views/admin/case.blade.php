@@ -52,8 +52,26 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="form-group">
+                  <label>Clint type</label>
+                  <select class="form-control select2" style="width: 100%;">
+                    <option selected="selected">govt</option>
+                    <option>Business</option>
+                    <option>law firm</option>
+                    <option>industry</option>
+                    <option>attorney</option>
+                    <option>Employee</option>
+                    <option>land worker</option>
+                  </select>
+                </div>
+
+                  
+
+                
+                <!-- /.card-body -->
+                
+
+
                     <label for="clientType">Client Type</label>
                     <select class="form-control select2" style="width: 100%;">
                     <option selected="selected">Employer</option>

@@ -60,4 +60,32 @@ class AdminController extends Controller
     {
         return view('admin.case_study_table');
     }
+    public function appoint()
+    {
+        return view('admin.appointment');
+    }
+    public function test()
+    {
+        return view('admin.testimonial');
+    }
+    public function table()
+    {
+        return view('admin.blogtable');
+    }
+    public function table1()
+    {
+        return view('admin.testimonialtable');
+    }
+    public function table2()
+    {
+        return view('admin.servicetable');
+    }
+    public function table3()
+    {
+        return view('admin.lawyertable');
+    }
+    public function table4()
+    {
+        return view('admin.categorytable');
+    }
 }
