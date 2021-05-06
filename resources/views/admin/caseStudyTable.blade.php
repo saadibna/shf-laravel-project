@@ -11,11 +11,10 @@
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-6">
-                            <h2>Manage <b>Employees</b></h2>
+                            <h2><b>Case Study</b></h2>
                         </div>
                         <div class="col-sm-6">
-                            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
-                            <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+                            <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Case</span></a>
                         </div>
                     </div>
                 </div>
@@ -28,11 +27,13 @@
 								<label for="selectAll"></label>
 							</span>
                             </th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Address</th>
-                            <th>Phone</th>
-                            <th>Actions</th>
+                            <th>ID</th>
+                            <th>Case Name</th>
+                            <th>Lawyer Name</th>
+                            <th>Description</th>
+                            <th>Date</th>
+                            <th>Image</th>
+                            <th>Client Type</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -43,10 +44,13 @@
 								<label for="checkbox1"></label>
 							</span>
                             </td>
-                            <td>Thomas Hardy</td>
-                            <td>thomashardy@mail.com</td>
-                            <td>89 Chiaroscuro Rd, Portland, USA</td>
-                            <td>(171) 555-2222</td>
+                            <td>101</td>
+                            <td>pittalls of Dismissing</td>
+                            <td>Joan Williams</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                            <td>02/05/2021</td>
+                            <td><img src="" alt=""></td>
+                            <td>Employer</td>
                             <td>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -59,10 +63,13 @@
 								<label for="checkbox2"></label>
 							</span>
                             </td>
-                            <td>Dominique Perrier</td>
-                            <td>dominiqueperrier@mail.com</td>
-                            <td>Obere Str. 57, Berlin, Germany</td>
-                            <td>(313) 555-5735</td>
+                            <td>102</td>
+                            <td>Tips for Social Security Disability proces</td>
+                            <td>Tom Park</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                            <td>18/05/2021</td>
+                            <td><img src="" alt=""></td>
+                            <td>People</td>
                             <td>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -75,10 +82,13 @@
 								<label for="checkbox3"></label>
 							</span>
                             </td>
-                            <td>Maria Anders</td>
-                            <td>mariaanders@mail.com</td>
-                            <td>25, rue Lauriston, Paris, France</td>
-                            <td>(503) 555-9931</td>
+                            <td>103</td>
+                            <td>Tips for Manageing Workers' Compensation Claims</td>
+                            <td>Joan Miller</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                            <td>10/05/2020</td>
+                            <td><img src="" alt=""></td>
+                            <td>Business</td>
                             <td>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -91,10 +101,13 @@
 								<label for="checkbox4"></label>
 							</span>
                             </td>
-                            <td>Fran Wilson</td>
-                            <td>franwilson@mail.com</td>
-                            <td>C/ Araquil, 67, Madrid, Spain</td>
-                            <td>(204) 619-5731</td>
+                            <td>104</td>
+                            <td>LawExpert Law Firm Gives Back</td>
+                            <td>Julien</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                            <td>18/05/2021</td>
+                            <td><img src="" alt=""></td>
+                            <td>Sponsor</td>
                             <td>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -107,10 +120,13 @@
 								<label for="checkbox5"></label>
 							</span>
                             </td>
-                            <td>Martin Blank</td>
-                            <td>martinblank@mail.com</td>
-                            <td>Via Monte Bianco 34, Turin, Italy</td>
-                            <td>(480) 631-2097</td>
+                            <td>105</td>
+                            <td>What Do I Do About Medical Bills From My Car Accident?</td>
+                            <td>Amelia Anderson</td>
+                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
+                            <td>20/04/2021</td>
+                            <td><img src="" alt=""></td>
+                            <td>Attorney</td>
                             <td>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>

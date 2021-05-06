@@ -52,6 +52,10 @@ class AdminController extends Controller
 
     public function tableCaseStudy()
     {
-        return view('admin.case_study_table');
+        return view('admin.caseStudyTable');
+    }
+    public function tableAppointment()
+    {
+        return view('admin.AppointmentTable');
     }
 }
