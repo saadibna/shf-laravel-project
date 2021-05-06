@@ -11,26 +11,31 @@
             <!-- general form elements -->
             <div class="card card-primary">
               <div class="card-header">
-                <h3 class="card-title">Add Category</h3>
+                <h3 class="card-title">Add Testimonials</h3>
               </div>
               <!-- /.card-header -->
               <!-- form start -->
               <form>
                 <div class="card-body">
                   <div class="form-group">
-                    <label for="userName">Category Name</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Enter Category Name">
+                    <label for="clientName">Client Name</label>
+                    <input type="text" class="form-control" id="clientName" placeholder="Enter Client Name">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="designation">Client Designation</label>
+                    <input type="text" class="form-control" id="designation" placeholder="Enter Client Designation">
                   </div>
 
                   <div>
                       <!-- textarea -->
                       <div class="form-group">
-                        <label>Description</label>
+                        <label>Client Comment</label>
                         <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
 
-                  <div class="form-group">
+                    <div class="form-group">
                     <label for="exampleInputFile">Upload Image</label>
                     <div class="input-group">
                       <div class="custom-file">
@@ -43,8 +48,10 @@
                     </div>
                   </div>
                 </div>
-                <!-- /.card-body -->
 
+                  </div>
+                </div>
+                
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </div>

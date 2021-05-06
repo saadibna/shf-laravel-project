@@ -39,4 +39,19 @@ class AdminController extends Controller
     {
         return view('admin.case');
     }
+
+    public function appoint()
+    {
+        return view('admin.appointment');
+    }
+
+    public function testimonial()
+    {
+        return view('admin.testimonial');
+    }
+
+    public function tableCaseStudy()
+    {
+        return view('admin.case_study_table');
+    }
 }
