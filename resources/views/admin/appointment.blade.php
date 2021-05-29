@@ -15,31 +15,32 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form>
+              <form action="{{route('admin.form.appointment')}}" method="post">
+                @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Name">
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Enter Name">
                   </div>
 
                   <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                    <input name="email" type="email" class="form-control" id="email" placeholder="Enter Email">
                   </div>
 
                   <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="phone" class="form-control" id="phone" placeholder="Enter Phone Number">
+                    <input name="phone" type="phone" class="form-control" id="phone" placeholder="Enter Phone Number">
                   </div>
 
                   <div class="form-group">
                     <label for="date">Date</label>
-                    <input type="date" class="form-control" id="date" placeholder="Enter Date">
+                    <input name="date" type="date" class="form-control" id="date" placeholder="Enter Date">
                   </div>
 
                   <div class="form-group">
                     <label for="time">Time</label>
-                    <input type="time" class="form-control" id="time" placeholder="Enter Time">
+                    <input name="time" type="time" class="form-control" id="time" placeholder="Enter Time">
                   </div>
 
 
@@ -47,14 +48,14 @@
                       <!-- textarea -->
                       <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                        <textarea name="description" class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
 
                   
 
                   </div>
-                </div>
+                {{--</div>--}}
                 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>

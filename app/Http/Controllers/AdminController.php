@@ -58,4 +58,25 @@ class AdminController extends Controller
     {
         return view('admin.AppointmentTable');
     }
+
+    public function tableBlog()
+    {
+        return view('admin.blogTable');
+    }
+    public function tableService()
+    {
+        return view('admin.ServiceTable');
+    }
+    public function tableTestimonials()
+    {
+        return view('admin.testimonialsTable');
+    }
+    public function tableLawyer()
+    {
+        return view('admin.lawyerTable');
+    }
+    public function tableCategory()
+    {
+        return view('admin.categoryTable');
+    }
 }

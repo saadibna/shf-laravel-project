@@ -21,12 +21,7 @@
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th>
-                                <span class="custom-checkbox">
-								<input type="checkbox" id="selectAll">
-								<label for="selectAll"></label>
-							</span>
-                            </th>
+                           
                             <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
@@ -34,104 +29,25 @@
                             <th>Date</th>
                             <th>Time</th>
                             <th>Description</th>
+                            <th>Edit/Delete</th>
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach($appointment as $data)
                         <tr>
-                            <td>
-                                <span class="custom-checkbox">
-								<input type="checkbox" id="checkbox1" name="options[]" value="1">
-								<label for="checkbox1"></label>
-							</span>
-                            </td>
-                            <td>101</td>
-                            <td>Md. Arifur Rahman Saad</td>
-                            <td>saadeclipse@gmail.com</td>
-                            <td>01794235464</td>
-                            <td>02/05/2021</td>
-                            <td>10.45 am</td>
-                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
+                            <td>{{$data->id}}</td>
+                            <td>{{$data->name}}</td>
+                            <td>{{$data->email}}</td>
+                            <td>{{$data->phone}}</td>
+                            <td>{{$data->date}}</td>
+                            <td>{{$data->time}}</td>
+                            <td>{{$data->description}}</td>
                             <td>
                                 <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
                                 <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <span class="custom-checkbox">
-								<input type="checkbox" id="checkbox2" name="options[]" value="1">
-								<label for="checkbox2"></label>
-							</span>
-                            </td>
-                            <td>102</td>
-                            <td>Sabbir Ahmmed</td>
-                            <td>ah.sabbir108677@gmail.com</td>
-                            <td>01734655478</td>
-                            <td>11/05/2021</td>
-                            <td>11.30 am</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="custom-checkbox">
-								<input type="checkbox" id="checkbox3" name="options[]" value="1">
-								<label for="checkbox3"></label>
-							</span>
-                            </td>
-                            <td>103</td>
-                            <td>Mashruba Jabin Bini</td>
-                            <td>jabinruba@gmail.com</td>
-                            <td>01763495841</td>
-                            <td>03/03/2020</td>
-                            <td>11.48 am</td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</td>
-                            <td>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="custom-checkbox">
-								<input type="checkbox" id="checkbox4" name="options[]" value="1">
-								<label for="checkbox4"></label>
-							</span>
-                            </td>
-                            <td>104</td>
-                            <td>Ahosan Habib</td>
-                            <td>ahosan105@gmail.com</td>
-                            <td>01737458712</td>
-                            <td>18/05/2021</td>
-                            <td>2.30 pm</td>
-                            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                            <td>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <span class="custom-checkbox">
-								<input type="checkbox" id="checkbox5" name="options[]" value="1">
-								<label for="checkbox5"></label>
-							</span>
-                            </td>
-                            <td>105</td>
-                            <td>Atiqur Rahman Shawon</td>
-                            <td>shawoncsebitc@gmail.com</td>
-                            <td>01777626132</td>
-                            <td>22/04/2021</td>
-                            <td>3.49 pm</td>
-                            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</td>
-                            <td>
-                                <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-                                <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                            </td>
-                        </tr>
+                    @endforeach
                     </tbody>
                 </table>
                 <div class="clearfix">
@@ -153,28 +69,38 @@
     <div id="addEmployeeModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form>
+                <form action="{{route('admin.form.appointment')}}" method="post">
+                    @csrf
                     <div class="modal-header">
-                        <h4 class="modal-title">Add Employee</h4>
+                        <h4 class="modal-title">Add New Appointment</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" class="form-control" required>
+                            <label for="name">Name</label>
+                            <input name="name" type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" required>
+                            <label for="email">Email</label>
+                            <input name="email" type="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Address</label>
-                            <textarea class="form-control" required></textarea>
+                            <label for="phone">Phone</label>
+                            <input name="phone" type="text" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Phone</label>
-                            <input type="text" class="form-control" required>
+                            <label for="date">Date</label>
+                            <input name="date" type="date" class="form-control" required>
                         </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input name="time" type="time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea name="description" class="form-control" required></textarea>
+                        </div>
+                        
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
@@ -190,7 +116,7 @@
             <div class="modal-content">
                 <form>
                     <div class="modal-header">
-                        <h4 class="modal-title">Edit Employee</h4>
+                        <h4 class="modal-title">Edit Appointment</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -203,13 +129,22 @@
                             <input type="email" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Address</label>
-                            <textarea class="form-control" required></textarea>
-                        </div>
-                        <div class="form-group">
                             <label>Phone</label>
                             <input type="text" class="form-control" required>
                         </div>
+                        <div class="form-group">
+                            <label>Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time</label>
+                            <input type="time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" required></textarea>
+                        </div>
+                        
                     </div>
                     <div class="modal-footer">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">

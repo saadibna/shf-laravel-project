@@ -15,18 +15,19 @@
               </div>
               <!-- /.card-header -->
               <!-- form start -->
-              <form>
+              <form action="{{route('admin.form.category')}}" method="post" enctype="multipart/form-data">
+                @csrf
                 <div class="card-body">
                   <div class="form-group">
                     <label for="userName">Category Name</label>
-                    <input type="text" class="form-control" id="userName" placeholder="Enter Category Name">
+                    <input name="name" type="text" class="form-control" id="userName" placeholder="Enter Category Name">
                   </div>
 
                   <div>
                       <!-- textarea -->
                       <div class="form-group">
                         <label>Description</label>
-                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                        <textarea name="description" class="form-control" rows="3" placeholder="Enter ..."></textarea>
                       </div>
                     </div>
 
@@ -34,13 +35,14 @@
                     <label for="exampleInputFile">Upload Image</label>
                     <div class="input-group">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="exampleInputFile">
+                        <input name="image" type="file" class="custom-file-input" id="exampleInputFile">
                         <label class="custom-file-label" for="exampleInputFile">Upload Image</label>
                       </div>
                       <div class="input-group-append">
                         <span class="input-group-text">Upload</span>
                       </div>
                     </div>
+                    {{--<input type="file" id="myFile" name="image">--}}
                   </div>
                 </div>
                 <!-- /.card-body -->
